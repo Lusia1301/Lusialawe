@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buah dan Sayur</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <style>
+    *,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  
+body{
+    margin: 0% 10;
+    background-color: #ffffff;
+    background-attachment: fixed;
+}
+
+
+/* =======MENU======= */
+.nav{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px 10;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: #2ba423;
+    position: sticky;
+    top: 0;
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav .logo h1{
+    font-size: 20px; /* Menyesuaikan ukuran huruf */
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #000000;
+    display: flex;
+}
+
+.nav .logo b{
+    color: greenyellow;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-right: 50px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+
+/* ====== CONTENT ======*/
+
+.content{
+    display: grid;
+    color: #000000;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+
+/* #Content TEXT*/
+/* ========LEFT-SIDE====== */
+
+.content .content-left{
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .content-left .info h2{
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+
+}
+
+.content .content-left .info p{
+    font-size: 23px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+
+/* #Content */
+/* ========BUTTON======== */
+
+.content .content-left button{
+    padding: 10px 23px;
+    background-color: #e8eed0;
+    color: #000000;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* #Content IMAGE*/
+/* =======RIGHT-SIDE====== */
+
+.content .content-right{
+    display: block;
+    width: 100%;
+}
+
+.content .content-right img{
+    width: 600px;
+    height: auto;
+    position: relative;
+}
+
+/* CSS untuk bagian "Tentang Kami" */
+#about-us {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  margin-top: 60px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-content h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.about-text {
+  max-width: 45%; /* Lebar maksimum untuk teks */
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about-image {
+  max-width: 50%; /* Lebar maksimum untuk gambar */
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CSS untuk konten "Produk Kami" */
+#our-products {
+  padding: 50px 0;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.product-item {
+  width: 200px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-item h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.product-item .price {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #eb1a1a;
+}
+
+/* CSS untuk konten "Produk Kami" dan "Lihat Produk Lain" */
+.container {
+  position: relative;
+}
+
+.see-more-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.see-more {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+/* CSS untuk konten "Kontak Kami" */
+#contact-us {
+  padding: 50px 0;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #2acc1e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #1d9917;
+}
+
+/* CSS untuk mengatur ukuran heading judul */
+h2 {
+  font-size: 30px; /* Ukuran yang lebih kecil dari default */
+}
+
+/* CSS untuk footer */
+footer {
+  background-color: #a8b3a7;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
+  </style>
+</head>
+<body>
+  <section class="menu">
+    <div class="nav">
+        <div class="logo"><h1>Ciwi<b>MART</b></h1></div>
+            <ul>
+              <li><a href="#Home">Home</a></li>
+              <li><a class="category" href="#popular-category">Kategori</a></li>
+              <li><a href="#Profile">Profile</a></li>
+            </ul>
+    </div>
+  </nav>
+    </section>
+    <section class="grid" id="popular-category">
+        <div class="content">
+            <div class="content-left">
+                <div class="info">
+                    <h2>Buah dan Sayuran</h2>
+                    <p>Halal, Sehat, dan kualitas terjamin okey.</p>
+                </div>
+                <button>Only Here</button>
+            </div>
+            <div class="content-right">
+                <img src="images/vegetables.webp" alt="">
+            </div>
+        </div>
+
+        <!-- Bagian "Tentang Kami" -->
+<section id="about-us">
+  <div class="container">
+    <h2>Tentang Kami</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit convallis enim, sit amet ultricies sem tristique vel. Donec porta sapien ac felis pharetra, ac facilisis elit consequat. Aliquam erat volutpat. Nulla nec sapien eu justo posuere gravida. Duis efficitur orci eget erat accumsan, at varius nulla mattis. Vestibulum tempor consectetur magna vel pellentesque. Fusce rutrum consectetur consequat. Phasellus nec magna eu felis accumsan dignissim. Sed pharetra justo id purus gravida, nec bibendum lacus fringilla. Cras vehicula nec mauris ac vehicula.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/gambar1.jpg" alt="Tentang Kami">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- konten untuk produk kami -->
+    <section id="our-products">
+      <div class="container">
+        <h2>Produk Kami</h2>
+        <div class="products">
+          <div class="product-item">
+            <img src="images/strawberries.jpg" alt="Produk 1">
+            <h3>strawberrie</h3>
+            <p class="price">Rp 20.000</p>
+          </div>
+          <div class="product-item">
+            <img src="images/oranges.jpg" alt="Produk 2">
+            <h3>Jeruk</h3>
+            <p class="price">Rp 30.000</p>
+          </div>
+          <div class="product-item">
+            <img src="images/melon.jpg" alt="Produk 3">
+            <h3>Melon</h3>
+            <p class="price">Rp 30.000</p>
+          </div>
+          <div class="product-item">
+            <img src="images/cucumbers.jpg" alt="Produk 4">
+            <h3>Ketimun</h3>
+            <p class="price">Rp 15.000</p>
+          </div>
+          <div class="product-item">
+            <img src="images/carrots.jpg" alt="Produk 5">
+            <h3>Wortel</h3>
+            <p class="price">Rp 40.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="see-more-container">
+      <p class="see-more">Lihat Produk Lainnya</p>
+    </div>
+  </div>
+    </section>
+    <!-- contact-us -->
+    <section id="contact-us">
+      <div class="container">
+        <h2>Kontak Kami</h2>
+        <form action="#" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">No Telepon:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="order">Pesanan:</label>
+            <textarea id="order" name="order" required></textarea>
+          </div>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </section>
+    <!-- footer sec -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Nama Perusahaan. <br>lusialawe@gmail.com<br>contact-us : +6282311952440</p>
+      </div>
+    </footer>
+</body>
+</html>
